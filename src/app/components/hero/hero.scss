@@ -1,0 +1,246 @@
+.hero-section {
+  min-height: 100vh;
+  padding: 120px 20px 60px;
+  background: linear-gradient(
+    135deg,
+    #020617 0%,
+    #0f172a 40%,
+    #111827 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(56, 189, 248, 0.12);
+    border-radius: 50%;
+    filter: blur(120px);
+    top: -100px;
+    right: -100px;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(99, 102, 241, 0.12);
+    border-radius: 50%;
+    filter: blur(120px);
+    bottom: -120px;
+    left: -120px;
+    z-index: 0;
+  }
+
+  .hero-content {
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      line-height: 1.1;
+      font-weight: 800;
+      margin-bottom: 28px;
+      letter-spacing: -2px;
+
+      background: linear-gradient(
+        90deg,
+        #ffffff,
+        #38bdf8,
+        #818cf8
+      );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: #e2e8f0;
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #94a3b8;
+      margin-bottom: 42px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+
+      .btn {
+        padding: 14px 28px;
+        border-radius: 14px;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &:hover {
+          transform: translateY(-4px);
+        }
+      }
+
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          #38bdf8,
+          #0ea5e9
+        );
+
+        color: #020617;
+        box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+
+        &:hover {
+          box-shadow: 0 14px 40px rgba(56, 189, 248, 0.45);
+        }
+      }
+
+      .btn-secondary {
+        background: #1e293b;
+        color: #ffffff;
+        border: 1px solid #334155;
+
+        &:hover {
+          background: #334155;
+        }
+      }
+
+      .btn-tertiary {
+        background: transparent;
+        color: #38bdf8;
+        border: 1px solid #38bdf8;
+
+        &:hover {
+          background: rgba(56, 189, 248, 0.1);
+        }
+      }
+    }
+  }
+
+  .hero-technologies {
+    margin-top: 70px;
+    padding: 16px 28px;
+    border-radius: 999px;
+
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    backdrop-filter: blur(10px);
+
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding-top: 100px;
+
+    .hero-content {
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .hero-description {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 120px 20px 80px;
+
+    .hero-content {
+      h1 {
+        font-size: 3rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.05rem;
+
+        br {
+          display: none;
+        }
+      }
+
+      .hero-description {
+        font-size: 0.95rem;
+
+        br {
+          display: none;
+        }
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          max-width: 320px;
+        }
+      }
+    }
+
+    .hero-technologies {
+      margin-top: 50px;
+      font-size: 0.85rem;
+      line-height: 1.8;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    .hero-content {
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+
+      .hero-description {
+        font-size: 0.9rem;
+      }
+    }
+
+    .hero-technologies {
+      padding: 14px 20px;
+    }
+  }
+}
