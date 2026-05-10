@@ -1,0 +1,88 @@
+
+// ========================================
+// Colors
+// ========================================
+
+$primary-color: #6c63ff;
+$secondary-color: #ff6584;
+
+$background-color: #0f172a;
+$surface-color: #1e293b;
+
+$text-color: #f8fafc;
+$text-light: #cbd5e1;
+$text-muted: #94a3b8;
+
+$border-color: #334155;
+
+$success-color: #22c55e;
+$error-color: #ef4444;
+$warning-color: #f59e0b;
+
+// ========================================
+// Typography
+// ========================================
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Inter", sans-serif;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 3rem;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// ========================================
+// Spacing
+// ========================================
+
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+
+// ========================================
+// Border Radius
+// ========================================
+
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 22px;
+
+// ========================================
+// Shadows
+// ========================================
+
+$shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 5px 15px rgba(0, 0, 0, 0.2);
+$shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+// ========================================
+// Transitions
+// ========================================
+
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// ========================================
+// Container
+// ========================================
+
+$container-width: 1200px;
+
+// ========================================
+// Breakpoints
+// ========================================
+
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1280px;

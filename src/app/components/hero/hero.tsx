@@ -3,7 +3,7 @@ export const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>Hi, I'm Yuvraj 👋</h1>
+        <h1>Hi, I'm Yuvraj</h1>
         
         <p className="hero-subtitle">
           Full Stack Developer building scalable web applications

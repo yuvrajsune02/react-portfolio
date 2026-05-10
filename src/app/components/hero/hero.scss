@@ -1,6 +1,7 @@
+@use "../../../assets/scss/main.scss" as *;
 .hero-section {
   min-height: 100vh;
-  padding: 120px 20px 60px;
+  padding: 80px 20px 60px;
   background: linear-gradient(
     135deg,
     #020617 0%,
@@ -91,7 +92,7 @@
 
       .btn {
         padding: 14px 28px;
-        border-radius: 14px;
+        border-radius: 30px;
         border: none;
         cursor: pointer;
         font-size: 1rem;
